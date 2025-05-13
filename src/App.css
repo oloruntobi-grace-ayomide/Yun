@@ -15,7 +15,7 @@ p, span, a, li {
     font-family:"Bai Jamjuree", sans-serif !important;
     word-spacing:2px;
     letter-spacing:0.5px;
-    font-size:18px;
+    font-size:17px;
     font-weight:500;
 }
 
@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-links {
     font-weight:600;
-    font-size:19px;
+    font-size:18px;
     padding:10px 15px;
     color:#03539C;
     border-bottom:solid 5px transparent;
@@ -151,7 +151,7 @@ section h2 {
 } 
 
 .hero-section .hero-content p {
-    font-size:25px;
+    font-size:22px;
     font-weight:500;
     color: #ffffff;
     max-width:700px;
@@ -234,7 +234,7 @@ section h2 {
 
 .services .card h2 {
     font-family: 'Bai Jamjuree', sans-serif;
-    font-size:30px;
+    font-size:25px;
     color: #03539c;
     margin-bottom:10px;
 }
@@ -320,7 +320,7 @@ section h2 {
     position: absolute;
     top:25px;
     width:60%;
-    height:250px;
+    height:220px;
     margin: auto;
     padding:20px 15px;
     display: flex;
