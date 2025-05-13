@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @font-face {
+  font-display: swap;
+  font-family: "Bai Jamjuree", sans-serif ;
+  font-style: normal;
+  font-weight: 400;
+  src:url('/fonts/bai-jamjuree-v12-latin-regular.woff2') format('woff2'),
+       url('/fonts/bai-jamjuree-v12-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: "Bai Jamjuree", sans-serif ;
+  font-style: normal;
+  font-weight: 700;
+  src:url('/fonts/bai-jamjuree-v12-latin-700.woff2') format('woff2'),
+       url('/fonts/bai-jamjuree-v12-latin-700.woff') format('woff'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Crimson Text', serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/crimson-text-v19-latin-regular.woff2') format('woff2'), 
+       url('/fonts/crimson-text-v19-latin-regular.woff') format('woff');
+      
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Crimson Text', serif;
+  font-style: normal;
+  font-weight: 700;
+  src:url('/fonts/crimson-text-v19-latin-700.woff2') format('woff2'), 
+      url('/fonts/crimson-text-v19-latin-700.woff') format('woff');
+      
+} */
+
+:root {
+  font-family:"Bai Jamjuree", sans-serif;
+  line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  line-height: 1.6;
+  color: #1F2937;
+  background-color: #F3F4F6;
+}
+
