@@ -100,8 +100,8 @@ const Carousel = () => {
                     );
                 })}
         
-            <button className='control-button' onClick={goToPrev} style={{left: -60}} aria-label="Previous Slide">←</button>
-            <button className='control-button' onClick={goToNext} style={{right: -60}} aria-label="Next Slide">→</button>
+            <button className='control-button left' onClick={goToPrev}  aria-label="Previous Slide">←</button>
+            <button className='control-button right' onClick={goToNext}  aria-label="Next Slide">→</button>
             <div className='slide-marker'>
                 {slides.map((_, index) => (
                     <span key={index} style={{ padding: '5px', color: currentIndex === index ? '#03539c' : 'gray' }}>&bull;</span>

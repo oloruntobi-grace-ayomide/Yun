@@ -81,8 +81,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size:18px;
     padding:10px 15px;
     color:#03539C;
-    border-bottom:solid 5px transparent;
-    transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+    border-bottom:solid 4px transparent;
+    transition:border 0.5s ease-in-out;
 }
 
 .nav-links:hover, .nav-links.active {
@@ -311,7 +311,7 @@ section h2 {
 
 .slide-wrapper {
     position: relative;
-    width: 800px;
+    width:65%;
     height:350px;
     margin: auto;
 }
@@ -372,12 +372,20 @@ section h2 {
     color: #ffffff;
     font-size:14px;
     cursor:pointer;
-    height: 40px;
-    width:40px;
+    height:32px;
+    width:32px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.control-button.left {
+    left:-50px;
+}
+
+.control-button.right {
+    right:-50px;
 }
 
 .slide-marker {
@@ -768,12 +776,143 @@ section h2 {
 }
 
 
+/* Responsive Styles */
+@media (max-width: 1024px) {
+
+p, span, a, li {
+    font-size:16px;
+}
+
+.nav-logo-toggler {
+    width:20%;
+}
+
+.logo {
+    width:120px;
+}
+
+.nav-links-container {
+    width:80%;
+}
+
+.nav-links {
+    font-size:17px;
+    border-bottom:solid 4px transparent;
+}
+
+.hero-section .hero-content h1 {
+    font-size: 48px;
+    max-width: 80%;
+}
+
+.hero-section .hero-content p {
+    font-size: 18px;
+    max-width: 80%;
+}
+
+.action-butt {
+    padding: 12px 24px;
+    font-size: 18px;
+}
+
+.action-butt .icon {
+    font-size: 18px;
+}
+
+.parent {
+    padding-left:40px;
+    padding-right:40px;
+}
+
+.investment-approach {
+    grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+}
+
+.contact-form-section {
+    width:85%;;
+}
+
+.slide-wrapper {
+    width:75%;
+    height:310px;
+}
+
+.slide {
+    width:58%;
+}
+
+.control-button.left {
+    left:-40px;
+}
+
+.control-button.right {
+    right:-40px;
+}
+
+}
+
+@media (max-width: 940px) and (min-width: 800px) {
+.parent {
+    padding-left:25px;
+    padding-right:25px;
+}
+
+.nav-logo-toggler {
+    width:12%;
+}
+
+.logo {
+    width:110px;
+}
+
+.nav-links-container {
+    width:88%;
+}
+
+.nav-links {
+    font-size:16px;
+    border-bottom:solid 3px transparent;
+}
+
+.hero-section .hero-content h1 {
+    font-size: 44px;
+    max-width: 90%;
+}
+
+.hero-section .hero-content p {
+    max-width: 85%;
+}
+
+.slide-wrapper {
+    width:85%;
+}
+
+.cta-content {
+    width:90%;
+}
+
+.mission h3, .approach h3, .leadership h3{
+    font-size:30px;
+}
+
+section h2 {
+    font-size: 33px;
+}
+
+.hero-section-small h1{
+    font-size:50px;
+}
+
+.investment-approach {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
 
 
+}
 
 @media screen and (max-width:800px) {
 .navbar-container {
-    height:70px;
+    height:90px;
     padding:0px 20px;
 }
 
@@ -821,4 +960,461 @@ section h2 {
     color: #003087;
     border: none;
 }
+}
+
+@media screen and (max-width: 799px) and (min-width: 715px) {
+
+.parent {
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.nav-links-container{
+    width:50%;
+}
+
+.hero-section {
+    height: 90svh;
+    background-attachment: scroll; /* Fixed background can be glitchy on mobile */
+}
+
+.hero-section .hero-content {
+    padding: 20px 10px;
+}
+
+.hero-section .hero-content h1 {
+    font-size: 40px;
+    max-width: 92%;
+}
+
+.hero-section .hero-content p {
+    font-size: 17px;
+    max-width: 90%;
+}
+
+.action-butt {
+    padding: 10px 20px;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.action-butt .icon {
+    font-size: 17px;
+}
+
+section h2 {
+    font-size: 31px;
+}
+
+.slide-wrapper {
+    width:86%;
+}
+
+.cta-content {
+    width:90%;
+}
+
+.contact-form-section {
+    width:89%;;
+}
+
+.mission h3, .approach h3, .leadership h3{
+    font-size:25px;
+}
+
+.hero-section-small h1{
+    font-size:45px;
+}
+
+.hero-section-small p {
+    font-size:19px;
+    width:85%;
+}
+
+}
+
+@media screen and (max-width: 715px) and (min-width: 600px){
+
+.parent {
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.nav-links-container{
+    width:60%;
+}
+
+.hero-section {
+    height: 85svh;
+    background-attachment: scroll;
+}
+
+.hero-section .hero-content {
+    padding: 20px 10px;
+}
+
+.hero-section .hero-content h1 {
+    font-size: 34px;
+    max-width: 95%;
+    margin-bottom:5px;
+}
+
+.hero-section .hero-content p {
+    font-size: 17px;
+    max-width: 92%;
+}
+
+section h2 {
+    font-size: 30px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns:420px;
+    justify-content: center;
+    margin-top:3rem;
+}
+
+.slide-wrapper {
+    width:90%;
+    height:300px;
+}
+
+.slide {
+    width:75%;
+    padding:20px 12px;
+}
+
+.slide.current {
+    left:12.5%;
+    right:12.5%;
+}
+
+.control-button {
+    height:28px;
+    width:28px;
+}
+
+.control-button.left {
+    left:-30px;
+}
+
+.control-button.right {
+    right:-30px;
+}
+
+.cta-content {
+    width:90%;
+}
+
+.cta-home-header {
+    font-size:26px;
+}
+
+.approach, .leadership {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left:10%;
+    padding-right:10%;
+    margin: auto;
+}
+
+.approach {
+    flex-direction: column-reverse;
+}
+ 
+.leadership {
+    flex-direction: column;
+}
+
+.mission, .leadership, .approach {
+    text-align: center !important;
+}
+
+.mission h3, .approach h3, .leadership h3{
+    font-size:25px;
+}
+
+.investment-approach {
+    grid-template-columns:410px;
+    justify-content: center;
+}
+
+.strategies .grid {
+    grid-template-columns: 470px;
+    margin-top:2.5rem;
+    justify-content: center;
+}
+
+.hero-section-small h1{
+    font-size:45px;
+}
+
+.contact-form-section {
+    width:90%;;
+}
+
+
+}
+
+@media screen and (max-width:600px) and (min-width:480px) {
+.parent {
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.nav-links-container{
+    width:70%;
+}
+
+.hero-section {
+    height: 85svh;
+    background-attachment: scroll;
+}
+
+.hero-section .hero-content {
+    padding: 20px 6px;
+}
+
+.hero-section .hero-content h1 {
+    font-size:35px;
+    max-width: 100%;
+    margin-bottom:5px;
+}
+
+.hero-section .hero-content p {
+    font-size: 17px;
+    max-width: 95%;
+}
+
+section h2 {
+    font-size:28px;
+}
+
+.why-choose-us-section .grid {
+    grid-template-columns:400px;
+    justify-content: center;
+}
+
+.services {
+    display: grid;
+    grid-template-columns:420px;
+    justify-content: center;
+    margin-top:3rem;
+}
+
+.slide-wrapper {
+    width:95%;
+    height:300px;
+}
+
+.slide {
+    width:80%;
+    padding:20px 10px;
+}
+
+.slide.current {
+    left:10%;
+    right:10%;
+}
+
+.control-button {
+    font-size:13px;
+    height:26px;
+    width:26px;
+}
+
+.control-button.left {
+    left:-20px;
+}
+
+.control-button.right {
+    right:-20px;
+}
+
+.cta-content {
+    width:95%;
+}
+
+.cta-home-header {
+    font-size:24px;
+}
+
+.mission, .leadership, .approach {
+    text-align: center !important;
+}
+
+.mission h3, .approach h3, .leadership h3{
+    font-size:23px;
+}
+
+.approach, .leadership {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left:6%;
+    padding-right:6%;
+    margin: auto;
+}
+
+.approach {
+    flex-direction: column-reverse;
+}
+ 
+.leadership {
+    flex-direction: column;
+}
+
+.hero-section-small h1{
+    font-size:40px;
+}
+
+.investment-approach {
+    grid-template-columns:420px;
+    justify-content: center;
+}
+
+.strategies .grid {
+    grid-template-columns: 430px;
+    margin-top:2.5rem;
+    justify-content: center;
+}
+
+.contact-form-section {
+    width:95%;;
+}
+
+}
+
+@media screen and (max-width:480px){
+.parent {
+    padding-left:12px;
+    padding-right:12px;
+}
+
+.nav-links-container{
+    width:75%;
+}
+
+.hero-section {
+    height: 87svh;
+    background-attachment: scroll;
+}
+
+.hero-section .hero-content {
+    padding: 20px 5px;
+}
+
+.hero-section .hero-content h1 {
+    font-size:28px;
+    max-width: 100%;
+    margin-bottom:5px;
+}
+
+.hero-section .hero-content p {
+    font-size: 16px;
+    max-width: 96%;
+}
+
+section h2 {
+    font-size:25px;
+}
+
+.why-choose-us-section .grid {
+    grid-template-columns:76%;
+    justify-content: center;
+}
+
+.services {
+    grid-template-columns:80%;
+    justify-content: center;
+    margin-top:3rem;
+}
+
+.slide-wrapper {
+    width:96%;
+    height:300px;
+}
+
+.slide {
+    width:90%;
+    padding:20px 10px;
+}
+
+.slide.current {
+    left:5%;
+    right:5%;
+}
+
+.control-button {
+    font-size:13px;
+    height:24px;
+    width:24px;
+}
+
+.control-button.left {
+    left:-18px;
+}
+
+.control-button.right {
+    right:-18px;
+}
+
+.cta-content {
+    width:96%;
+}
+
+.cta-home-header {
+    font-size:22px;
+}
+
+.hero-section-small h1{
+    font-size:38px;
+}
+
+.hero-section-small p{
+    font-size:15px;
+}
+
+.mission, .leadership, .approach {
+    text-align: center !important;
+}
+
+.mission h3, .approach h3, .leadership h3{
+    font-size:22px;
+}
+
+.approach, .leadership {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left:5%;
+    padding-right:5%;
+    margin: auto;
+}
+
+.approach {
+    flex-direction: column-reverse;
+}
+ 
+.leadership {
+    flex-direction: column;
+}
+
+.investment-approach {
+    grid-template-columns:82%;
+    justify-content: center;
+}
+
+.strategies .grid {
+    grid-template-columns:85%;
+    margin-top:2.5rem;
+    justify-content: center;
+}
+
+.contact-form-section {
+    width:96%;;
+}
+
 }
