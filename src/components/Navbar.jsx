@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
-import Logo from '../assets/yun_logo.png'
+import Logo from '../assets/Yun_Capital_Logo.png'
 
 
 function Navbar(){

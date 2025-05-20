@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Layout from "../components/Layout";
 import Carousel from "../components/Carousel";
 import Cta from "../components/Cta";
+import WWA from '/public/who_we_are.png'
 
 
 function  Home(){
@@ -14,14 +15,17 @@ function  Home(){
                 <div className="hero-content">
                     <h1>Your Trusted Partner in Wealth Management</h1>
                     <p>Discover purpose-driven investing with Yun Capital Management, where disciplined strategies and global opportunities deliver measurable growth.</p>
-                    <Link to='/' className='action-butt'>Schedule a Consultation <span className="icon">➜</span></Link>
+                    <Link to='/contact-us' className='action-butt'>Schedule a Consultation <span className="icon">➜</span></Link>
                 </div>
             </section>
 
-             {/* About Section  */}
+             {/* Who we are Section  */}
             <section className="home-about parent" data-aos="fade-up" data-aos-easing="ease-in-out">
+                <img src={WWA} alt="who we are image" />
+                <div className="who-we-are-content">
                 <h2>Who We Are</h2>
                 <p>At Yun Capital Management, we are committed to creating diversified portfolios that prioritize risk control and sustainable growth. Led by Jung Yun, with over 20 years of global finance experience, our team sources investments from around the world to ensure stability and impact, no matter the economic climate.</p>
+                </div>
             </section>
 
             {/* Services Section */}
@@ -51,6 +55,11 @@ function  Home(){
                         <p>
                         Access high-growth opportunities worldwide, tailored to your financial goals and risk tolerance.
                         </p>
+                        <Link to='#' className="learn-more">Learn More</Link>
+                    </div>
+                    <div className="card extra" data-aos="fade-up" data-aos-easing="ease-in-out">
+                        <h2>Sustainable Income Strategies</h2>
+                        <p>Generate consistent income through ethical investments, such as ESG-focused dividends and green bonds.</p>
                         <Link to='#' className="learn-more">Learn More</Link>
                     </div>
                 </div>

@@ -4,6 +4,7 @@ import Cta from "../components/Cta";
 import BIF from '../assets/bif.png'
 import RWP from '../assets/rwp.png'
 import SG from '../assets/sg.jpg'
+import EIG from '/public/p_invest.png'
 
 function Investment(){
     return(
@@ -13,7 +14,7 @@ function Investment(){
                 <div className="relative z-[100] hero-section-small-content">
                     <h1>Purpose-Driven Investment</h1>
                     <p>Wealth with Impact</p>
-                    <Link to='/' className='action-butt'>Schedule a Consultation <span className="icon">➜</span></Link>
+                    <Link to='/contact-us' className='action-butt'>Schedule a Consultation <span className="icon">➜</span></Link>
                 </div>
             </section>
             
@@ -48,6 +49,10 @@ function Investment(){
                     <h3>Tailored Solutions</h3>
                     <p>Each portfolio is customized to reflect your financial objectives and values.</p>
                 </div>
+                <div className="item" >
+                    <h3>Long-Term Value Creation</h3>
+                    <p>We focus on investments that deliver sustainable, enduring returns, aligning with your vision for lasting wealth.</p>
+                </div>
             </section>
 
             {/* <!-- Featured Strategies --> */}
@@ -79,6 +84,15 @@ function Investment(){
                             <p><strong>Focus</strong>: Conservative investments supporting stable, purpose-driven sectors.</p>
                             <p><strong>Benefits</strong>: Security during downturns with steady growth.</p>
                             <p><strong>Example</strong>: Investing in municipal bonds funding education.</p>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <img src={EIG} alt="Ethical Income Generation" />
+                        <div className="card-content">
+                            <h3>Ethical Income Generation</h3>
+                            <p><strong>Focus</strong>: Investments in stable, ethical assets that generate consistent income.</p>
+                            <p><strong>Benefits</strong>: Reliable cash flow with alignment to sustainable values.</p>
+                            <p><strong>Example</strong>: Investing in green bonds supporting renewable energy projects.</p>
                         </div>
                     </div>
                 </div>

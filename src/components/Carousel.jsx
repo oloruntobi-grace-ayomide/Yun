@@ -100,12 +100,17 @@ const Carousel = () => {
                     );
                 })}
         
-            <button className='control-button left' onClick={goToPrev}  aria-label="Previous Slide">←</button>
-            <button className='control-button right' onClick={goToNext}  aria-label="Next Slide">→</button>
             <div className='slide-marker'>
-                {slides.map((_, index) => (
-                    <span key={index} style={{ padding: '5px', color: currentIndex === index ? '#03539c' : 'gray' }}>&bull;</span>
-                ))}
+                <div className="control-div">
+                  <button className='control-button' onClick={goToPrev}  aria-label="Previous Slide">&#10094;</button>
+                  <p>
+                  {slides.map((_, index) => (
+                    
+                      <span key={index} style={{ padding: '5px', color: currentIndex === index ? '#03539c' : 'gray' }}>&bull;</span>
+                  ))}
+                  </p>
+                  <button className='control-button' onClick={goToNext}  aria-label="Next Slide">&#10095;</button>
+                </div>
             </div>
         </div>
       

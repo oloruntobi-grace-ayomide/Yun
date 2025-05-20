@@ -75,10 +75,10 @@ function Contact() {
 
                     <form ref={form} onSubmit={sendEmail} method="POST">
                         <input required type="hidden" name="title" value='Message from Yun Contact Form'/>
-                        <input required type="text" name="name" placeholder="Your Name"/>
-                        <input required type="email" name="email" placeholder="Your Email"/>
-                        <input required type="tel" name="tel" placeholder="Your Phone (Optional)"/>
-                        <textarea name="message"  placeholder="Your Message" className="pt-[10px]"></textarea>
+                        <input required type="text" name="name" placeholder="Name"/>
+                        <input required type="email" name="email" placeholder="Email"/>
+                        <input required type="tel" name="tel" placeholder="Phone (Optional)"/>
+                        <textarea name="message"  placeholder="Additional Message" className="pt-[10px]"></textarea>
                         <button type="submit" disabled={isSubmitting}> {isSubmitting ? (
                             <img src={loader} alt="Loading..." />
                         ) : ("Send Message" )}</button>

@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import Layout from "../components/Layout";
+import Cta from "../components/Cta"
 import founder from "../assets/yun_owner.jpg"
 import dataChart from "../assets/data_chart.png"
 function  About(){
@@ -10,6 +12,7 @@ function  About(){
                 <div className="relative z-[100] hero-section-small-content">
                     <h1>About Yun</h1>
                     <p>Building Wealth with Confidence</p>
+                    <Link to='/contact-us' className='action-butt'>Schedule a Consultation <span className="icon">➜</span></Link>
                 </div>
             </section>
 
@@ -37,6 +40,10 @@ function  About(){
                 </div>
             </section>
          
+             {/* <!-- CTA Section --> */}
+            <Cta>
+                 <h2 className="cta-home-header investment-cta-header">Ready to Get Started?</h2>
+            </Cta>
         </Layout>
     )
 }
